@@ -61,7 +61,7 @@ flat_tri = flatten(trigrams)
 def get_top(flat):
     count_unigrams = Counter(flat)
     sorted_count = sorted(count_unigrams.items(), key = lambda x:x[1], reverse=True)
-    return sorted_count[:15]
+    return sorted_count[:30]
 
 def get_state(note):
     states_set = set(states)
