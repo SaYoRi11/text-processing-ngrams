@@ -96,5 +96,5 @@ states = [get_state(note) for note in notes]
 
 with open('result.csv', 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(['Note', 'Tags', 'State'])
-    writer.writerows(list(zip(notes, tags, states)))
+    writer.writerow(['Tags', 'State', 'Note'])
+    writer.writerows(list(zip(tags, states, notes)))
